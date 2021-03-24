@@ -1,0 +1,286 @@
+/* common */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 00; 
+ }
+ 
+ body {
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .center {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ 
+ .float-left {
+     float: left;
+ }
+ 
+ .clearfix::after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+ 
+ .list-inline {
+     list-style: none;
+ }
+ 
+ .list-inline > li {
+     display: inline-block;
+     padding: 0 10px;
+ }
+ 
+ .list-inline a:not(.btn) {
+     text-decoration: none;
+     color: white;
+     font-size: 14px;
+     text-transform: uppercase;
+ }
+ 
+ .list-inline a:not(.btn):hover {
+     color: #7cbb02;
+ }
+ 
+ .w-50 {
+     width: 49.70%;
+ }
+
+ .w-33 {
+     width: 33%;
+ }
+ 
+ /* pulsanti */
+ .btn {
+     display: inline-block;
+     padding: 5px 10px;
+     font-size: 14px;
+     line-height: 20px;
+     color: white;
+     border-radius: 5px;
+     text-decoration: none;
+     text-transform: uppercase;
+ }
+ 
+ .btn-lg {
+     padding: 20px;
+ }                                              
+ 
+ .btn-blue {
+     background-color: #2A4F75;
+     border: 1px solid white;
+ }
+ 
+.btn-blue:hover {
+    background-color: white;
+    color: #2A4F75;
+    background-color: 1px solid #2A4F75;
+}
+
+ .btn-green {
+     background-color: #7cbb02;
+     border: 1px solid #7cbb02;
+ }
+
+.btn-green:hover {
+    background-color: white;
+    color: #7cbb02;
+    border: 1 px solid #7cbb02;
+}
+
+ /* header */
+ header {
+    height: 550px;
+    background-color: #2A4F75; 
+    background-image: url('../img/background-header.png');
+    background-position: 112% 106%;
+    background-size: 65% auto;
+    background-repeat: no-repeat;
+ }
+ 
+ .header-nav {
+     height: 80px;
+     line-height: 80px;
+ }
+ 
+ .header-logo {
+     width: 15%;
+     height: 100%;
+ }
+ 
+ .header-logo img {
+     vertical-align: middle;
+ }
+ 
+ .nav-left {
+     width: 45%;
+     height: 100%;
+     text-align: left;
+ }
+ 
+ .nav-right {
+     width: 40%;
+     height: 100%;
+     text-align: right;
+ }
+ 
+ .jumbotron {
+     position: relative;
+     height: 470px;
+ }
+ 
+ .jumbotron-text {
+     position: absolute;
+     top: 50%;
+     left: 0;
+     transform: translateY(-50%);
+ }
+ 
+ h1 {
+     color: white;
+     font-size: 55px;
+     font-weight: 600;
+     margin-bottom: 30px;
+     letter-spacing: 2px;
+ }
+
+ /* main */
+ .main-title {
+     position: relative;
+     height: 200px;
+     background-color: #D3D3D3;
+ }
+
+ .first-section {
+     height: 400px;
+ }
+
+ .second-section {
+     height: 400px;
+     margin-bottom: 5%;
+ }
+
+ .info {
+     position: relative;
+     display: inline-block;
+     height: 100%;
+ }
+
+ .main-title h2 {
+     text-align: center;
+     font-size: 28px;
+     margin-bottom: 20px;
+ }
+
+.main-title h3 {
+    text-align: center;
+    color: grey;
+}
+
+.info img {
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 25%;
+}
+
+.info h3:not(.second-section h3) {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #7cbb02;
+}
+
+.info p:not(.second-section p) {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+}
+
+.second-section img {
+    width: 90%;
+    height: 90%;
+}
+
+.test {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 60%;
+}
+
+.test h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.test p {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.test a {
+    color: #4169E1;
+}
+
+/* footer */
+footer {
+    position: relative;
+    height: 150px;
+    line-height: 150px;
+    background-color: #D3D3D3;
+}
+
+footer h3 {
+    display: inline-block;
+    width: 50%;
+    font-size: 26px;
+}
+
+.footer-nav {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+
+.footer-nav li {
+    display: inline-block;
+    font-size: 16px;
+    color: grey;
+}
+
+select {
+    padding-right: 50px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    background-color: #D3D3D3;
+}
+
+.fixed {
+    position: fixed;
+    right: 15%;
+    top: 95vh;
+    z-index: 999;
+}
+
